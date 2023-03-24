@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  background-color: #3367d6;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-logo {
+  width: 100px;
+  height: 23px;
+}
+.search-container {
+  height: 45px;
+  width: 250px;
+  background-color: #2850a7;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-image {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+}
+.input {
+  height: 43px;
+  width: 249px;
+  background-color: #2850a7;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  border-top: none;
+  border-bottom: none;
+  border-radius: none;
+  border-left: 1px solid #ececec;
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.un-order-container {
+  box-shadow: 4px 4px 16px 4px #ececec;
+  padding: 15px;
+  margin: 25px;
+}
+.no-history {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  color: #64748b;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+  .app-logo {
+    height: 30px;
+    width: 130px;
+    margin-left: 20px;
+  }
+  .search-container {
+    width: 450px;
+    margin-left: 120px;
+  }
+  .input {
+    width: 450px;
+  }
+  .search-image {
+    margin: 20px;
+  }
+}
+
+.list-container {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time-container {
+  display: flex;
+  flex-direction: column;
+}
+.time-accessed {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 0px;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.domain-image {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 0px;
+}
+.domain-url {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: #64748b;
+  margin-top: 0px;
+}
+.delete-image {
+  width: 20px;
+  align-self: center;
+}
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .time-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .time-accessed {
+    margin-right: 30px;
+  }
+  .image-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    margin-bottom: 20px;
+    margin-right: 15px;
+  }
+  .domain-url {
+    margin-top: 20px;
+  }
+}
